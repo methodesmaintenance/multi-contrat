@@ -16,7 +16,6 @@ def get_contracts():
     """Récupère la liste des dossiers de contrats."""
     return [d for d in os.listdir(WORKING_DIR) if os.path.isdir(os.path.join(WORKING_DIR, d))]
 
-@st.cache_data
 def load_data(contract_name):
     """Charge les données en cache pour la rapidité."""
     path = os.path.join(WORKING_DIR, contract_name, "data.csv")
