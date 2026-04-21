@@ -1,4 +1,4 @@
 streamlit
 pandas
-openxyl
+openpyxyl
 numpy
