@@ -71,7 +71,7 @@ else:
     st.write("Créez un nouvel espace de travail pour un contrat spécifique.")
 
     with st.form("new_contract_form"):
-        new_name = st.text_input("Nom du contrat (ex: La Poste - IDF)")
+        new_name = st.text_input("Nom du contrat (ex: La Poste)")
         uploaded_file = st.file_uploader("Importer le fichier Excel ou CSV", type=["csv", "xlsx"])
         submit = st.form_submit_button("Créer l'interface")
 
